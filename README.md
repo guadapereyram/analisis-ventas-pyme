@@ -19,3 +19,4 @@ Analizar datos de ventas de una PyME para obtener información útil para la tom
 /datos
 /resultados
 /documentacion
+- Uso de ramas feature para nuevas funcionalidades
