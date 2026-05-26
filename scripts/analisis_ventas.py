@@ -17,3 +17,18 @@ print(f"\nTotal de ventas: {total_sales}")
 average_sales = dataframe["ventas"].mean()
 
 print(f"Promedio de ventas: {average_sales}")
+
+# Identificar el producto con mayor cantidad de ventas
+top_product = dataframe.loc[dataframe["ventas"].idxmax(), "producto"]
+top_sales = dataframe["ventas"].max()
+
+print(f"Producto más vendido: {top_product} ({top_sales} ventas)")
+
+# Calcular ventas por categoría
+sales_by_category = dataframe.groupby("categoria")["ventas"].sum()
+
+print("\nVentas por categoría:")
+print(sales_by_category)
+
+print("\nVentas por categoría:")
+print(sales_by_category)
