@@ -1,5 +1,6 @@
 # Importación de la librería Pandas para análisis de datos
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Carga del archivo CSV con información de ventas
 dataframe = pd.read_csv("../datos/ventas.csv")
@@ -32,3 +33,16 @@ print(sales_by_category)
 
 print("\nVentas por categoría:")
 print(sales_by_category)
+
+# Generar gráfico de ventas por producto
+plt.figure(figsize=(8, 5))
+plt.bar(dataframe["producto"], dataframe["ventas"])
+plt.title("Ventas por producto")
+plt.xlabel("Producto")
+plt.ylabel("Cantidad de ventas")
+plt.tight_layout()
+
+# Guardar gráfico en la carpeta resultados
+plt.savefig("../resultados/ventas_por_producto.png")
+
+print("\nGráfico generado en: resultados/ventas_por_producto.png")
