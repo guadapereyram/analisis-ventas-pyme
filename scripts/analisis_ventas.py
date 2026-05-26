@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carga del archivo CSV con información de ventas
-dataframe = pd.read_csv("../datos/ventas.csv")
+dataframe = pd.read_csv("datos/ventas.csv")
 
 # Mostrar resumen de ventas
 print("Resumen de ventas")
@@ -43,6 +43,5 @@ plt.ylabel("Cantidad de ventas")
 plt.tight_layout()
 
 # Guardar gráfico en la carpeta resultados
-plt.savefig("../resultados/ventas_por_producto.png")
-
+plt.savefig("resultados/ventas_por_producto.png")
 print("\nGráfico generado en: resultados/ventas_por_producto.png")
