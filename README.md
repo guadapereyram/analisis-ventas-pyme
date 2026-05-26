@@ -43,3 +43,4 @@ Analizar información de ventas de una PyME para obtener métricas relevantes qu
 - Uso de commits trazables vinculados a tareas
 - Ejecución reproducible en Google Colab
 - Versionado del proyecto mediante Git y GitHub
+- Uso de ramas feature para nuevas funcionalidades
